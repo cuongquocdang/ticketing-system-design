@@ -1,0 +1,7 @@
+### Place Order
+POST http://localhost:8080/v1/orders/placement
+Content-Type: application/json
+
+{
+  "productId": "1234"
+}
