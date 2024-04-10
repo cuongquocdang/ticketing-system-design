@@ -17,7 +17,7 @@ public class OrderPlacementConsumer {
 
     @KafkaListener(topics = "ORDERS", groupId = "order-processor")
     @SneakyThrows
-    public void flightEventConsumer(final String message) {
+    public void consumeOrderPlacement(final String message) {
 
         var obj = objectMapper.readValue(message, OrderPlacementRequestDTO.class);
 
